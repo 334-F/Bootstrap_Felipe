@@ -1,0 +1,161 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://i.pinimg.com/originals/ac/1e/96/ac1e96e20d29814ceda500bbd9fa0c3a.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+}
+
+/* El contenedor principal ocupa el espacio disponible */
+.container {
+    flex: 1;
+    padding: 0 15px;
+}
+
+/* Estilos para el navbar */
+.navbar {
+    margin-bottom: 30px;
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f8f9fa;
+}
+
+.navbar-nav .active {
+    color: #ffd700;
+}
+
+/* Formulario */
+form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo de las etiquetas */
+.form-label {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Estilos generales para inputs y textarea */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+/* Validación de campos */
+input:invalid {
+    border: 2px solid red; /* Se muestra el borde rojo si el campo es inválido */
+}
+
+input:valid {
+    border: 2px solid green; /* Se muestra el borde verde si el campo es válido */
+}
+
+/* Mensajes de error */
+.invalid-feedback {
+    display: none; /* Ocultar mensaje de error cuando es válido */
+    color: red;
+    font-size: 0.9rem;
+}
+
+/* Mostrar mensaje de error solo si el campo es inválido */
+input:invalid ~ .invalid-feedback {
+    display: block; /* Mostrar el mensaje de error */
+}
+
+/* Mensajes de éxito */
+.valid-feedback {
+    display: none; /* Ocultar mensaje de "Válido" cuando es inválido */
+    color: green;
+    font-size: 0.9rem;
+}
+.valid-feedback1{
+    color: green;
+   
+
+}
+
+.form-control1{
+    border: 2px solid green;
+
+}
+
+/* Mostrar mensaje de "Válido" solo cuando el campo es válido */
+input:valid ~ .valid-feedback {
+    display: block; /* Muestra el mensaje "Válido" */
+}
+
+/* Estilos de los botones */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 12px 25px;
+    color: white;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Estilos generales para tablas */
+.table {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.table th, .table td {
+    padding: 15px;
+    text-align: center;
+}
+
+.table img {
+    max-width: 100%;
+}
+
+/* Ajustes para el pie de página */
+.footer img {
+    width: 50px;
+    margin-bottom: 10px;
+}
