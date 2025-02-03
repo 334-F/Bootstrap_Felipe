@@ -48,14 +48,25 @@
                     <div class="invalid-feedback">Por favor, ingrese entre 3 y 20 letras.</div>
                 </div>
 
-                <div class="mb-3">
-                    <label for="phone" class="form-label">Teléfono (9 dígitos)</label>
-                    <input type="tel" name="phone" required placeholder="Ingrese su número de teléfono" 
-                        class="form-control" pattern="[0-9]{9}" id="phone">
-                        <div class="valid-feedback">Válido</div>
-                    <div class="invalid-feedback">Debe contener exactamente 9 números.</div>
-                </div>
-
+              <div class="mb-3">
+    <label for="phone" class="form-label">Teléfono</label>
+    <div class="input-group">
+        <select class="form-select" id="country-code" name="country-code">
+            <option value="+1">+1 (EE.UU., Canadá)</option>
+            <option value="+34">+34 (España)</option>
+            <option value="+44">+44 (Reino Unido)</option>
+            <option value="+49">+49 (Alemania)</option>
+            <option value="+55">+55 (Brasil)</option>
+            <option value="+61">+61 (Australia)</option>
+            <option value="+91">+91 (India)</option>
+       
+        </select>
+        <input type="tel" name="phone" required placeholder="Ingrese su número de teléfono" 
+               class="form-control" pattern="[0-9]{9}" id="phone">
+    </div>
+    <div class="valid-feedback">Válido</div>
+    <div class="invalid-feedback">Debe contener exactamente 9 números.</div>
+</div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Correo electrónico</label>
                     <input type="email" name="email" required placeholder="Ingrese su correo electrónico" 
